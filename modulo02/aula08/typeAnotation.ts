@@ -1,9 +1,9 @@
 // Variáveis
-let nome: string = "renato";
+let nome: string = 'renato';
 console.log(nome);
 
 // Arrays
-let animais: string[] = ["elefante", "cachorro", "gato"];
+let animais: string[] = ['elefante', 'cachorro', 'gato'];
 console.log(animais);
 
 // Objetos
@@ -13,7 +13,7 @@ let carro: {
   preco: number;
 };
 
-carro = { nome: "toyota", ano: 2019, preco: 80000 };
+carro = { nome: 'toyota', ano: 2019, preco: 80000 };
 console.log(carro);
 
 // Functions

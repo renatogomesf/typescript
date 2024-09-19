@@ -8,10 +8,10 @@ console.log(terefaConcluida);
 console.log(terefaPendente);
 
 // Exemplo 02
-let concluido: boolean = false
+let concluido: boolean = false;
 
-if(!concluido){
-    console.log('tarefa concluida com sucesso')
-}else{
-    console.log('tarefa pendente')
+if (!concluido) {
+  console.log('tarefa concluida com sucesso');
+} else {
+  console.log('tarefa pendente');
 }
