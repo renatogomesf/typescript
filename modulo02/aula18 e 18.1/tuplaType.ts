@@ -33,7 +33,33 @@ let listaFrutas: [string, ...string[]] = [
 console.log(...listaFrutas);
 
 // Exemplo 05 - Lista heterogênea de tupla
+let listaFrutas2: [number, boolean, ...string[]] = [5, true, ...listaFrutas];
+console.log(listaFrutas2);
 
 // Exemplo 06 - Uso de função com tupla
+// "nomes: string": indica que o parâmetro é do tipo string
+// "nomes: string[]"(com uso de colchetes "[]"): indica que é uma tupla de strings com label "nome"
+// o mesmo vale para "idades"
+
+// function listarPessoas(nomes: string, idades: number)
+function listarPessoas(nomes: string[], idades: number[]) {
+  return [...nomes, ...idades];
+}
+
+let resultado = listarPessoas(['glaucia', 'jurema'], [34, 68]);
+
+console.log(resultado);
 
 // Exemplo 07 - Labeled tuples com spread operator numa função
+
+// "|": significa "ou"
+type Nome =
+  | [primeiroNome: string, sobrenome: string]
+  | [primeiroNome: string, noemMeio: string, sobrenome: string];
+
+function criarPessoa(...nome: Nome) {
+  return [...nome];
+}
+
+console.log(criarPessoa('glaucia', 'lemos'));
+console.log(criarPessoa('glaucia', 'de souza', 'lemos'));

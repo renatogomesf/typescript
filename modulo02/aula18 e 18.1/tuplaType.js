@@ -27,5 +27,20 @@ let listaFrutas = [
 ];
 console.log(...listaFrutas);
 // Exemplo 05 - Lista heterogênea de tupla
+let listaFrutas2 = [5, true, ...listaFrutas];
+console.log(listaFrutas2);
 // Exemplo 06 - Uso de função com tupla
-// Exemplo 07 - Labeled tuples com spread operator numa função
+// "nomes: string": indica que o parâmetro é do tipo string
+// "nomes: string[]"(com uso de colchetes "[]"): indica que é uma tupla de strings com label "nome"
+// o mesmo vale para "idades"
+// function listarPessoas(nomes: string, idades: number)
+function listarPessoas(nomes, idades) {
+    return [...nomes, ...idades];
+}
+let resultado = listarPessoas(['glaucia', 'jurema'], [34, 68]);
+console.log(resultado);
+function criarPessoa(...nome) {
+    return [...nome];
+}
+console.log(criarPessoa('glaucia', 'lemos'));
+console.log(criarPessoa('glaucia', 'de souza', 'lemos'));
