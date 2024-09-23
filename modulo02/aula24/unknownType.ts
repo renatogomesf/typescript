@@ -18,10 +18,10 @@ valorVariavel = 'salve';
 // Exemplo 02 - Erro ao tentar atribuir um valor 'unknown' a outros tipos
 let valor: unknown;
 
-let valor1: boolean = valor;
-let valor2: number = valor;
-let valor3: string = valor;
-let valor4: any[] = valor;
+// let valor1: boolean = valor;
+// let valor2: number = valor;
+// let valor3: string = valor;
+// let valor4: any[] = valor;
 
 // Exemplo 03 - Diferença entre any e unknown
 let algumaCoisaAny: any
@@ -29,7 +29,7 @@ let algumaCoisaUnknown: unknown
 
 // "toFixed()": pertence a um number.prototype. ou seja, ele espera um número.
 console.log(algumaCoisaAny.toFixed(2));//não verifica o valor
-console.log(algumaCoisaUnknown.toFixed(2));//precisa verifica o tipo antes de atribuir.
+// console.log(algumaCoisaUnknown.toFixed(2));//precisa verifica o tipo antes de atribuir.
 
 //verificação do tipo
 if(typeof algumaCoisaUnknown == 'number'){
