@@ -55,11 +55,11 @@ class Funcionario extends Pessoa {
     }
 
     retornarNome(): string {
-        return `${super.apresentarPessoa()} e sou ${this.funcao}`
+        return `${super.apresentarPessoa()} e sou ${this.funcao}`;
     }
 }
 
-const funcionario = new Funcionario('Renato', 'Gomes', 'Eng. Software')
+const funcionario = new Funcionario('Renato', 'Gomes', 'Eng. Software');
 
 console.log(funcionario.apresentarPessoa());
 console.log(funcionario.nomeCompleto());
