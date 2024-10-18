@@ -43,7 +43,7 @@ const animal: Animal02 = {
 console.log(animal);
 
 // Exemplo 03 - Uso do Omit
-// substituir uma propriedade/tipo de uma interface extendida
+// substitui/omite (Omit) uma propriedade de uma interface extendida
 
 interface Funcionario {
     id: number;
