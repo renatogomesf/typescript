@@ -6,6 +6,8 @@
 
 // garante que o programa seja flexível e escalável a longo prazo
 
+// usa-se colchetes angulares "<>"
+
 export {};
 
 // Exemplo 01 - Generics
